@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{%block content%}
+<div class="row-1">
+    <div style="margin: 10px; border: 1px solid black;">
+        <form action="/resolver" method="POST" id="operaciones1">
+            <div class="form-group text-center">
+                <label for="operaciones">Operaciones:</label>
+                <textarea class="form-control" id="operaciones" name="operaciones" rows="3"></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">Resolver</button>
+                <button type="reset" class="btn btn-danger">Limpiar</button>
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock%}
